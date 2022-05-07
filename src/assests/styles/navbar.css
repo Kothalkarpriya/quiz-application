@@ -1,0 +1,32 @@
+@import "./coolors.css";
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    box-shadow: var(--bottom-shadow);
+    font-family: var(--font);
+}
+
+.nav-brand {
+    padding-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.nav-collapse {
+    padding: 1rem;
+}
+
+.nav-list-group {
+    list-style: none;
+    display: inline-flex;
+}
+
+.nav-collapse .list-ele {
+    padding-left: 1rem;
+}
