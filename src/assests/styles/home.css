@@ -1,0 +1,63 @@
+@import "./colors.css";
+
+.main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    font-family: var(--font);
+}
+
+.main-container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.quiz-type-one,
+.quiz-type-two {
+    color: var(--primary);
+}
+
+.quiz-type-one,
+.quiz-type-two,
+.quiz-type-three,
+img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 15rem;
+}
+
+img {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    width: 20rem;
+}
+
+.quiz-type-one:hover,
+.quiz-type-two:hover,
+.quiz-type-three:hover,
+img:hover {
+    box-shadow: var(--all-side-shadow);
+}
+
+.quiz-type-three .image-text {
+    color: var(--theme);
+}
+
+.quiz-type .details {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
