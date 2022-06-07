@@ -207,7 +207,7 @@ export const patchUserHandler = function (schema, request) {
           else
             for (let i = presentUser.rank - 1; i >= 0; i--) {
               if (
-                i != 0 &&
+                i !== 0 &&
                 score > highscores.find((user) => user.rank === i).score
               )
                 this.db.highscores.update({ rank: i }, { rank: i + 1 });
@@ -226,7 +226,7 @@ export const patchUserHandler = function (schema, request) {
           this.db.highscores.remove({ rank: 10 });
           for (let i = 9; i >= 0; i--) {
             if (
-              i != 0 &&
+              i !== 0 &&
               score > highscores.find((user) => user.rank === i).score
             )
               this.db.highscores.update({ rank: i }, { rank: i + 1 });
