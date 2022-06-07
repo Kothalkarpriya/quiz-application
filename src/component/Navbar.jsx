@@ -19,7 +19,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="list-ele">
-            <Link to="/Login" className="nav-link upper-text">
+            <Link to="/login" className="nav-link upper-text">
               Login
             </Link>
           </li>

@@ -14,7 +14,6 @@ export default function Rules() {
     <section className="section">
       <div className="main-container rule">
         <h2 className="upper-text">Rules</h2>
-
         <article className="rules">
           <ol className="text-align-left">
             <li className="rule-list">Their are 5 questions in total</li>

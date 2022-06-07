@@ -27,7 +27,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-          {/* </Link> */}
         </section>
         <section className="quiz-type" onClick={() => clickHandler("CSS")}>
           <div className="quiz-type-two">
