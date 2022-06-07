@@ -8,6 +8,7 @@ Inside Quiz app you will get three types of Quizzes which are:
 - Logical Resoning
 
 #### Home Page:
+![image](https://user-images.githubusercontent.com/54578811/172392313-df179131-6c9f-459c-b41d-4e78460d6b27.png)
 
 #### Rules Page:
 ###### There are categories are shown, after onclick you will be directed to the rules page:
