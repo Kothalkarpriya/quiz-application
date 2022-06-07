@@ -1,5 +1,7 @@
 # Quiz App
 
+Live App: https://quiz-application-by-priya.netlify.app/
+
 Inside Quiz app you will get three types of Quizzes which are:
 - HTML
 - CSS 
