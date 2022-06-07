@@ -40,7 +40,6 @@ export const getQuestionsHandler = function (schema, request) {
           ? [...this.db.questions]
           : this.db.questions.filter((qs) => qs.level === lvl);
     respQuestions = shuffleArray(respQuestions).slice(-1 * length);
-    console.log(respQuestions);
     return new Response(
       200,
       {questions: respQuestions,},

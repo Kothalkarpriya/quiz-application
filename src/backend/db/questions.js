@@ -11,6 +11,7 @@ export const questions = [
     correct_option: "1",
     tags: ["HTML"],
     level: "EASY",
+    category: "HTML"
   },
   {
     id: uuid(),
@@ -22,6 +23,7 @@ export const questions = [
     correct_option: "2",
     tags: ["HTML"],
     level: "EASY",
+    category: "HTML"
   },
   {
     id: uuid(),
@@ -34,6 +36,7 @@ export const questions = [
     correct_option: "3",
     tags: ["HTML"],
     level: "EASY",
+    category: "HTML"
   },
   {
     id: uuid(),
@@ -46,6 +49,7 @@ export const questions = [
     correct_option: "3",
     tags: ["HTML"],
     level: "EASY",
+    category: "HTML"
   },
   {
     id: uuid(),
@@ -57,6 +61,7 @@ export const questions = [
     correct_option: "2",
     tags: ["HTML"],
     level: "EASY",
+    category: "HTML"
   },
   {
     id: uuid(),
