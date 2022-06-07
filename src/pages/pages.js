@@ -1,7 +1,8 @@
 import Login from "./Auth/Login";
-import SignIn from "./Auth/SignIn";
+import SignUp from "./Auth/SignUp";
 import Home from "./Home/Home";
 import Quiz from "./Quiz/Quiz";
 import Rules from "./Rules";
+import QuizAns from "./Quiz/QuizAns";
 
-export { Login, SignIn, Home, Quiz, Rules };
+export { Login, SignUp, Home, Quiz, Rules, QuizAns };
