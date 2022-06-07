@@ -11,7 +11,8 @@ export default function Navbar() {
           </Link>
         </h1>
       </header>
-      <div className="nav-collapse">
+      {/* Todo- Work on Auth Part */}
+      {/* <div className="nav-collapse">
         <ul className="nav-list-group">
           <li className="list-ele">
             <Link to="/" className="nav-link upper-text">
@@ -24,7 +25,7 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 }

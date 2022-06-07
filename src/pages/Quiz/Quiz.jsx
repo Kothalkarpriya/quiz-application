@@ -6,7 +6,7 @@ import "../../assests/styles/quiz.css";
 export default function Quiz() {
   const navigate = useNavigate();
   const location = useLocation();
-  const tag = location?.state?.tag ?? "HTML";
+  const tag = location?.state?.tag;
   const [data, setData] = useState();
 
   const {
@@ -39,8 +39,8 @@ export default function Quiz() {
     setScore(0);
     setCurrentQuestion(0);
     setShowResult(false);
-    navigate("/")
-  }
+    navigate("/");
+  };
   return (
     <section className="section">
       <div className="main-container">
