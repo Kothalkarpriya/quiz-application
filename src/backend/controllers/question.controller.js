@@ -1,22 +1,10 @@
 import { Response } from 'miragejs';
 
 import {
-  // requiresAuth,
   shuffleArray,
 } from '../utils';
 
 export const getQuestionsHandler = function (schema, request) {
-  // const user = requiresAuth.call(this, request);
-  // try {
-  //   if (!user) {
-  //     return new Response(
-  //       403,
-  //       {},
-  //       {
-  //         message: "Auth Error",
-  //       }
-  //     );
-  //   }
     try{
     const tags = request.queryParams?.tags?.split(",") ?? [];
     const lvl = request.queryParams?.lvl ?? "";
