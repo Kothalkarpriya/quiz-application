@@ -34,6 +34,13 @@ export default function Quiz() {
       setShowResult(true);
     }
   };
+
+  const resetQuiz = () => {
+    setScore(0);
+    setCurrentQuestion(0);
+    setShowResult(false);
+    navigate("/")
+  }
   return (
     <section className="section">
       <div className="main-container">
@@ -50,7 +57,7 @@ export default function Quiz() {
 
                 <button
                   className="btn-start upper-text"
-                  onClick={() => navigate("/")}
+                  onClick={() => resetQuiz()}
                 >
                   Play More Quizzes
                 </button>
