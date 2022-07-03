@@ -22,7 +22,7 @@ export default function RoutePath() {
         path="/rules"
         element={
           <AuthRoute>
-            <Rules />{" "}
+            <Rules />
           </AuthRoute>
         }
       />

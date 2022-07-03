@@ -34,7 +34,9 @@ const AuthContextProvider = ({ children }) => {
       localStorage.setItem("user", JSON.stringify(data));
       authDispatch({ type: "SIGNUP", payload: data });
       navigate(from, { replace: true });
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const logout = () => {

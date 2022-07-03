@@ -24,6 +24,7 @@ export default function SignUp() {
                 id="input-name"
                 placeholder="First Name"
                 required
+                // commented code is needed for the further changes
                 // onChange={(e) => changeInputHandler(e)}
               />
             </div>
@@ -36,6 +37,7 @@ export default function SignUp() {
                 id="input-lastname"
                 placeholder="Last Name"
                 required
+                // commented code is needed for the further changes
                 // onChange={(e) => changeInputHandler(e)}
               />
             </div>
@@ -49,6 +51,7 @@ export default function SignUp() {
               id="input-email"
               placeholder="username@email.com"
               required
+              // commented code is needed for the further changes
               //   onChange={(e) => changeInputHandler(e)}
             />
           </div>
@@ -62,6 +65,7 @@ export default function SignUp() {
               className="input-password"
               placeholder="*************"
               required
+              // commented code is needed for the further changes
               //   onChange={(e) => changeInputHandler(e)}
             />
           </div>
@@ -77,7 +81,9 @@ export default function SignUp() {
               required
             />
           </div>
-          <div className="input-block-check">
+          {/* // commented code is needed for the further changes */}
+          {/* <div className="input-block-check">
+            
             <input
               type="checkbox"
               name="checkPass"
@@ -85,7 +91,7 @@ export default function SignUp() {
               className="text-align-left"
             />
             Show Password
-          </div>
+          </div> */}
           <div className="input-block-check">
             <input type="checkbox" className="accept-ele" required />I accept to
             signup
