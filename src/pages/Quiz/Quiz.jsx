@@ -74,10 +74,10 @@ export default function Quiz() {
 
                 <article className="ques">
                   <p className="question">
-                    {data?.questions[currenQuestion].statement}
+                    {data?.questions[currenQuestion]?.statement}
                   </p>
                   <ol className="ques-option-list">
-                    {data?.questions[currenQuestion].option.map((options) => {
+                    {data?.questions[currenQuestion]?.option.map((options) => {
                       return (
                         <li
                           key={options.id}

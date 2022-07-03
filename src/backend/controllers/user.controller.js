@@ -69,7 +69,6 @@ export const signupHandler = function (schema, request) {
 
 export const loginHandler = function (schema, request) {
   const { username, password } = JSON.parse(request.requestBody);
-  console.log(request.requestBody);
   try {
     const user = this.db.users.findBy({ username });
 

@@ -1,12 +1,19 @@
 import { BiRightArrow } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 
 export default function SignUp() {
+
+  const {signup} = useAuth();
+
+  const submit = () =>{
+    signup();
+  }
   return (
     <section className="main-container">
       <div className="signup">
         <h2 className="heading">Signup</h2>
-        <form action="#" className="signup-form" id="signup">
+        <form action="#" className="signup-form" id="signup" onSubmit={submit}>
           <div className="input-block-name">
             <div className="input-block">
               <label for="#input-name" className="text-align-left">
