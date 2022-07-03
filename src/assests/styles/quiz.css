@@ -83,3 +83,36 @@ padding: 0.5rem;
   margin:1rem;
   font-size: 1.2rem;
 }
+
+@media only screen and (max-width:500px) {
+  .quiz-container{
+    max-width:max-content;
+    padding: 5px;
+  }
+
+  .quiz-container h2{
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .ques-head{
+    font-size: 1.2rem;
+  }
+
+  .ques{
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .question{
+    padding: 0;
+    font-size: 1rem;
+    margin: 5px;
+  }
+  .ques-option-list li{
+    padding: 5px;
+  }
+  .ans-list{
+    font-size: 0.8rem;
+  }
+}
