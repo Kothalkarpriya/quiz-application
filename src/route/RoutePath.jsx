@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Home, Login, SignUp, Quiz, Rules, QuizAns } from "../pages/pages";
+import { Home, Login, SignUp, Quiz, Rules } from "../pages/pages";
 import TwopiRest from "twopi-rest";
 import { sample_requests } from "../backend/sample-requests";
 import AuthRoute from "./AuthRoute";
@@ -23,14 +23,6 @@ export default function RoutePath() {
         element={
           <AuthRoute>
             <Rules />
-          </AuthRoute>
-        }
-      />
-      <Route
-        path="/quizans"
-        element={
-          <AuthRoute>
-            <QuizAns />
           </AuthRoute>
         }
       />

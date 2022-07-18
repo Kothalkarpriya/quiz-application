@@ -19,11 +19,12 @@ export default function Quiz() {
   } = useQuizContent();
 
   useEffect(() => {
-    fetch(`/question?tags=${tag}`)
+    fetch(`/question??tags=${tag}`)
       .then((res) => res.json())
       .then((data) => setData(data));
   }, [tag]);
 
+  console.log(data);
   const optionClicked = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
@@ -37,7 +38,7 @@ export default function Quiz() {
 
   const resetQuiz = () => {
     setScore(0);
-    setCurrentQuestion(0);
+    setCurrentQuestion(1);
     setShowResult(false);
     navigate("/");
   };
