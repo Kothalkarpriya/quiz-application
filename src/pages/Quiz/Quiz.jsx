@@ -19,7 +19,7 @@ export default function Quiz() {
   } = useQuizContent();
 
   useEffect(() => {
-    fetch(`/question?tags=${tag}`)
+    fetch(`/question??tags=${tag}`)
       .then((res) => res.json())
       .then((data) => setData(data));
   }, [tag]);
@@ -37,7 +37,7 @@ export default function Quiz() {
 
   const resetQuiz = () => {
     setScore(0);
-    setCurrentQuestion(0);
+    setCurrentQuestion(1);
     setShowResult(false);
     navigate("/");
   };
@@ -74,10 +74,10 @@ export default function Quiz() {
 
                 <article className="ques">
                   <p className="question">
-                    {data?.questions[currenQuestion].statement}
+                    {data?.questions[currenQuestion]?.statement}
                   </p>
                   <ol className="ques-option-list">
-                    {data?.questions[currenQuestion].option.map((options) => {
+                    {data?.questions[currenQuestion]?.option.map((options) => {
                       return (
                         <li
                           key={options.id}

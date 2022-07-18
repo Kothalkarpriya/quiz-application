@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -26,6 +29,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.pagewrap-quiz{
+ flex-grow: 1;
+ margin: auto 0;
+}
+
+@media only screen and (min-width:1050px) {
+ .pagewrap-quiz {
+  margin: 1rem 0 10rem 0;
+ }  
 }
 
 @keyframes App-logo-spin {

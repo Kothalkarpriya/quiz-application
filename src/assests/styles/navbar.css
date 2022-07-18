@@ -9,6 +9,10 @@
     font-family: var(--font);
 }
 
+.navbar h1{
+    margin: 0;
+}
+
 .nav-brand {
     padding-left: 1rem;
 }
