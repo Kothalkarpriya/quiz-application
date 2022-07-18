@@ -24,7 +24,6 @@ export default function Quiz() {
       .then((data) => setData(data));
   }, [tag]);
 
-  console.log(data);
   const optionClicked = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
